@@ -1,3 +1,4 @@
+
 :root {
   --ui-color-marca: #257B18;
 
@@ -444,6 +445,7 @@ div label[for=ui-component-toggle__yearly] {
 }
 
 .ui-section-footer {
+  background-color: #2aaf87;
   padding-bottom: 1.25rem;
   padding-top: 1.25rem;
 }
@@ -453,6 +455,7 @@ div label[for=ui-component-toggle__yearly] {
 }
 
 .ui-section-footer--copyright {
+  color:#FFF;
   margin-bottom: 0;
   margin-right: auto;
 }
