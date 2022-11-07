@@ -1,14 +1,13 @@
-
 :root {
-  --ui-color-marca: #353535;
+  --ui-color-marca: #257B18;
 
-  --ui-color-n-000: #fff;
+  --ui-color-n-000: #D8F7EE;
   --ui-color-n-050: #80E1C4;
-  --ui-color-n-100: #ebebeb;
-  --ui-color-n-300: #aeaeae;
-  --ui-color-n-500: #353535;
-  --ui-color-n-700: #282828;
-  --ui-color-n-900: #1a1a1a;
+  --ui-color-n-100: #257B18;
+  --ui-color-n-300: #D8F7EE;
+  --ui-color-n-500: #257B18;
+  --ui-color-n-700: #fff;
+  --ui-color-n-900: #257B18;
   
   --ui-color-background-primario  : var(--ui-color-n-000);
   --ui-color-background-secondario: var(--ui-color-n-050);
@@ -50,7 +49,7 @@
   --ui-gap-testimonial: 3rem;
   
   --ui-radius-avatar: 5rem;
-  --ui-radius-button: 5rem;
+  --ui-radius-button: 0.5rem;
   --ui-radius-card  : .5rem;
 
 }
@@ -66,7 +65,7 @@ html {
 }
 
 body {
-  background-color: var(--ui-color-background-primario);
+  background: #abedd9;;
   color: var(--ui-color-typography-body);
   font-family: var(--ui-typography-typeface);
   font-feature-settings: "liga", "kern";
@@ -123,7 +122,7 @@ small {
 }
 
 .ui-text-note {
-  color: var(--ui-color-typography-note);
+  color: #15450e;
   line-height: 1;
 }
 
@@ -215,7 +214,7 @@ input[name="toggle"] {
 div label[for=ui-component-toggle__monthly],
 #ui-component-toggle__yearly:checked ~
 div label[for=ui-component-toggle__yearly] {
-  background-color: var(--ui-color-background-primario);
+  background: var(--ui-color-background-primario);
   color: var(--ui-color-typography-body);
 }
 
@@ -248,6 +247,7 @@ div label[for=ui-component-toggle__yearly] {
 }
 
 .ui-section-header {
+  background-color: #2aaf87;
   padding-bottom: 1.25rem;
   padding-top: 1.25rem;
 }
@@ -300,7 +300,7 @@ div label[for=ui-component-toggle__yearly] {
 }
 
 .ui-section-header--nav {
-  background-color: var(--ui-color-background-primario);
+  background-color: var(--ui-color-background-primario); 
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.05);
   flex-direction: column;
   gap: var(--ui-gap-header);
@@ -530,8 +530,13 @@ div label[for=ui-component-toggle__yearly] {
   }
   
   .ui-section-header--nav-link {
+    color: #fff;
     font-size: var(--ui-typography-p);
     padding: 0;
+  }
+
+  .color {
+    background-color: #80E1C4;
   }
 
   .ui-section-hero { text-align: left; }
