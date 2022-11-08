@@ -157,6 +157,7 @@
   .ui-component-cta {
     flex-direction: column;
     row-gap: var(--ui-gap-cta);
+    margin-bottom: 1rem;
   }
   
   .ui-component-button {
@@ -369,7 +370,7 @@
   
   .ui-section-feature {
     padding-bottom: 5rem;
-    padding-top: 5rem;
+    padding-top: 0.5rem;
   }
   
   .ui-section-feature__layout { 
@@ -415,20 +416,20 @@
     font-weight: 700;
   }
   
-  .ui-component-card--pricing-amount-1::before { content: "$5"; }
+  .ui-component-card--pricing-amount-1::before { content: "S/.20"; }
   
   #ui-component-toggle__yearly:checked ~ div
-  .ui-component-card--pricing-amount-1::before { content: "$3"; }
+  .ui-component-card--pricing-amount-1::before { content: "S/.15"; }
   
-  .ui-component-card--pricing-amount-2::before { content: "$15"; }
-  
-  #ui-component-toggle__yearly:checked ~ div
-  .ui-component-card--pricing-amount-2::before { content: "$13"; }
-  
-  .ui-component-card--pricing-amount-3::before { content: "$25"; }
+  .ui-component-card--pricing-amount-2::before { content: "S/.60"; }
   
   #ui-component-toggle__yearly:checked ~ div
-  .ui-component-card--pricing-amount-3::before { content: "$23"; }
+  .ui-component-card--pricing-amount-2::before { content: "S/.45"; }
+  
+  .ui-component-card--pricing-amount-3::before { content: "S/.120"; }
+  
+  #ui-component-toggle__yearly:checked ~ div
+  .ui-component-card--pricing-amount-3::before { content: "S/.100"; }
   
   .ui-component-list--pricing {
     margin-bottom: 1.5rem;
@@ -552,7 +553,7 @@
     }
   
     .ui-section-header {
-      padding-bottom: 0;
+      padding-bottom: 2rem;
       padding-top: 2rem;
     }
   
@@ -602,13 +603,29 @@
       padding-bottom: 2rem;
       padding-top: 2rem;
     }
+
+    .img-responsive {
+      width: 18rem;
+    }
   }
   
   @media screen and (max-width: 48rem) {
   
   .logo{
     width: 110px;
+    }
+
+  .rukkhadevata {
+    visibility: hidden;
+    }
+  .img-responsive{
+    width: 16rem;
   }
+
+  .color {
+    background-color: #80E1C4;
+  }
+
   }
   
   @media screen and (min-width: 64rem) {
@@ -631,6 +648,7 @@
       flex-direction: row;
       justify-content: start;
     }
+
   }
   
   @media screen and (min-width: 75rem) {
@@ -683,7 +701,7 @@
     }
   
     .ui-section-feature__layout:last-of-type {
-      margin-top: 7.5rem;
+      margin-top: 1.5rem;
     }
   
     .ui-component-list-feature {
