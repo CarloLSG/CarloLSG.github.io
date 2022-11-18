@@ -174,12 +174,22 @@
     background-color: var(--ui-color-marca);
     color: var(--ui-color-tipografia-boton);
   }
+
+  .ui-component-button-primary:hover {
+    background-color: #216b15;
+    color: var(--ui-color-tipografia-boton);
+  }
   
   .ui-component-button-secondary {
     background-color: var(--ui-color-background-primario);
     color: var(--ui-color-marca);
   }
   
+  .ui-component-button-secondary:hover {
+    background-color: var(--ui-color-marca);
+    color: var(--ui-color-tipografia-boton);
+  }
+
   .ui-component-button-big, .ui-component-button-normal { 
     padding: .75rem 1rem .875rem; 
   }
@@ -296,6 +306,11 @@
   .ui-section-header--menu-icon::after { 
     top: .6875rem;
  }
+
+ .iframenew {
+  width: 28rem;
+  height: 18rem;
+ }
   
   #ui-section-header--menu-id:checked ~
   .ui-section-header--menu-icon::before {
@@ -314,7 +329,7 @@
     gap: var(--ui-gap-header);
     left: 0;
     opacity: 0;
-    padding: 7.375rem var(--ui-layout-container) 5rem;
+    padding: 7.375rem 9rem 5rem;
     position: absolute;
     right: 0;
     top: -1rem;
@@ -333,7 +348,7 @@
   
   .ui-section-header--nav-link {
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 0.5rem 0 0 0 !important;
     font-size: var(--ui-typography-h3);
 
     padding-top: 0;
