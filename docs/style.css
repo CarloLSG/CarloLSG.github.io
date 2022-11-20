@@ -64,6 +64,10 @@
   *:after { 
     box-sizing: inherit; 
   }
+
+  main {
+    padding-top: 10rem;
+  }
   
   body {
     background: #abedd9;;
@@ -264,6 +268,10 @@
     background-color: #2aaf87;
     padding-bottom: 1.25rem;
     padding-top: 1.25rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
   }
   
   .ui-section-header__layout { 
@@ -627,7 +635,7 @@
   @media screen and (max-width: 48rem) {
   
   .logo{
-    width: 110px;
+    width: 120px;
     }
 
   .rukkhadevata {
@@ -640,11 +648,13 @@
   .color {
     background-color: #80E1C4;
   }
-
+  main {
+    padding-top: 2rem;
+  }
   }
   
   @media screen and (min-width: 64rem) {
-  
+
     :root {
   
       --ui-layout-container: 0;
@@ -663,7 +673,7 @@
       flex-direction: row;
       justify-content: start;
     }
-
+    
   }
   
   @media screen and (min-width: 75rem) {
